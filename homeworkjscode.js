@@ -12,9 +12,6 @@ const create = function () {
         newDiv.appendChild(newPar);
         main.appendChild(newDiv).setAttribute("id", "div_" + i);   
 
-        if (i < 1 || i > 100) {
-            newDiv.style = "display: none";
-        } else {
             if (i % 3 === 0 && i % 5 === 0) {                              
                 newPar.appendChild(document.createTextNode(i + ' FIZZ BUZZ'));
                 main.appendChild(newDiv).setAttribute("class", "fizzbuzz");
