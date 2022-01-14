@@ -16,20 +16,20 @@ const create = function () {
                 newPar.appendChild(document.createTextNode(i + ' FIZZ BUZZ'));
                 main.appendChild(newDiv).setAttribute("class", "fizzbuzz");
 
-            } else if (i % 3 === 0) {
+                } else if (i % 3 === 0) {
                 newPar.appendChild(document.createTextNode(i + ' FIZZ'));
                 main.appendChild(newDiv).setAttribute("class", "fizz");
 
-            } else if (i % 5 === 0) {
+                } else if (i % 5 === 0) {
                 newPar.appendChild(document.createTextNode(i + ' BUZZ'));
                 main.appendChild(newDiv).setAttribute("class", "buzz");
 
-            } else {
+                } else {
                 newPar.appendChild(document.createTextNode(i));
                 main.appendChild(newDiv).setAttribute("class", "num");
+                }
             }
-        }
-    }
+    
 };    
 
 create();
